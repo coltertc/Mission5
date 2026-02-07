@@ -1,0 +1,25 @@
+@* Sets the page title for the layout and browser tab. *@
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@* Ski Lessons page heading and intro *@
+<h1>Ski Lessons</h1>
+
+<p>Learn to become and expert skiier.</p>
+
+@* Lesson cost calculator: hours input, rate, calculate button, and total output *@
+<h2>Calculate Cost for Lessons</h2>
+<form>
+    <label>Hours:</label>
+    <input type="number" id="numHours" min="1" />
+    <span id="hoursError" class="text-danger"></span>
+    <br />
+    <label for="rate">Cost Per Hour:</label>
+    <input type="text" id="rate" value="35" readonly class="form-control w-25"/>
+    <br />
+    <input type="button" value="Calculate Cost" id="btnSubmit" />
+    <br /> <br />
+    <label for="total">Total Cost</label>
+    <input type="text" id="total" readonly class="form-control w-25" />
+
+</form>
